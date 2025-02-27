@@ -22,8 +22,8 @@ temp=4'b0010;
 temp =4'b1111;
 end
 initial begin //waveform viewer
-$dumfile("dump.vcd");
-$dumvars;
+$dumpfile("dump.vcd");
+$dumpvars;
 end
 initial begin //values of the variales to consol
   $monitor("Temp: %0d at time: %0t", temp,$time);
